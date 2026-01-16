@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>🚀 Sdx chart</h1>
+
+    <div id="top-bar">
+    <input type="text" id="search" placeholder="Search coin...">
+    <button onclick="loadData(1)">24h</button>
+    <button onclick="loadData(7)">7d</button>
+    <button onclick="loadData(30)">30d</button>
+</div>
+
+<div id="bubble-container"></div>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="close">✖</span>
+        <img id="pimg">
+        <h2 id="pname"></h2>
+        <p id="pprice"></p>
+        <p id="p24h"></p>
+        <p id="p7d"></p>
+        <p id="p30d"></p>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
